@@ -1,0 +1,272 @@
+/**
+ * UI Modify Module - Theme-aware CSS
+ * Compatible with: blue-theme, dark-theme, hc-light, hc-dark
+ */
+
+/* Logo Preview Container */
+.logo-preview-box {
+	border: 1px solid rgba(128, 128, 128, 0.2);
+	border-radius: 2px;
+	padding: 30px;
+	min-height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.02);
+	position: relative;
+}
+
+.logo-preview-placeholder {
+	color: rgba(0, 0, 0, 0.4);
+	font-style: normal;
+	text-align: center;
+	font-size: 13px;
+}
+
+.logo-preview-image {
+	max-width: 100%;
+	max-height: 200px;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+	border-radius: 2px;
+}
+
+/* Current Logo Display */
+.current-logo-preview {
+	display: block;
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.01);
+	border: 1px solid rgba(128, 128, 128, 0.2);
+	border-radius: 2px;
+}
+
+/* Info Box */
+.info-box {
+	background-color: rgba(31, 134, 201, 0.06);
+	border: 1px solid rgba(31, 134, 201, 0.2);
+	border-left: 3px solid #1f86c9;
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	border-radius: 2px;
+}
+
+.info-box h4 {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: inherit;
+}
+
+.info-box ul {
+	margin: 0;
+	padding-left: 20px;
+	font-size: 13px;
+}
+
+.info-box li {
+	margin-bottom: 4px;
+	line-height: 1.5;
+}
+
+/* Theme Notice Box */
+.theme-notice-box {
+	background-color: rgba(76, 175, 80, 0.08);
+	border: 1px solid rgba(76, 175, 80, 0.25);
+	border-left: 3px solid #4caf50;
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	border-radius: 2px;
+}
+
+.theme-notice-box p {
+	margin: 0 0 6px 0;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.theme-notice-box ul {
+	margin: 0;
+	padding-left: 20px;
+	font-size: 13px;
+}
+
+.theme-notice-box li {
+	margin-bottom: 3px;
+	line-height: 1.5;
+}
+
+/* Form Styling */
+.form-input-margin {
+	margin-top: 8px;
+}
+
+.text-muted {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+}
+
+/* Logo Dimensions Info */
+.logo-dimensions-info {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 2px 8px;
+	background-color: var(--ui-badge-bg, #e3f2fd);
+	color: var(--ui-badge-text, #1976d2);
+	border-radius: 3px;
+	font-size: 0.85em;
+	font-weight: 500;
+}
+
+/* Upload Progress */
+.upload-progress {
+	display: none;
+	margin-top: 15px;
+}
+
+.upload-progress.active {
+	display: block;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 24px;
+	background-color: var(--ui-progress-bg, #e0e0e0);
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	background-color: var(--ui-progress-fill, #4caf50);
+	transition: width 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 0.9em;
+	font-weight: 500;
+}
+
+/* Validation Messages */
+.validation-message {
+	margin-top: 8px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 0.9em;
+	display: none;
+}
+
+.validation-message.active {
+	display: block;
+}
+
+.validation-message.error {
+	background-color: var(--ui-error-bg, #ffebee);
+	color: var(--ui-error-text, #c62828);
+	border-left: 3px solid var(--ui-error-border, #d32f2f);
+}
+
+.validation-message.warning {
+	background-color: var(--ui-warning-bg, #fff3e0);
+	color: var(--ui-warning-text, #e65100);
+	border-left: 3px solid var(--ui-warning-border, #ff9800);
+}
+
+.validation-message.success {
+	background-color: var(--ui-success-bg, #e8f5e9);
+	color: var(--ui-success-text, #2e7d32);
+	border-left: 3px solid var(--ui-success-border, #4caf50);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark-theme"] .logo-preview-box,
+body[data-theme="dark-theme"] .logo-preview-box {
+	background-color: rgba(255, 255, 255, 0.03);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark-theme"] .logo-preview-placeholder,
+body[data-theme="dark-theme"] .logo-preview-placeholder {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+[data-theme="dark-theme"] .current-logo-preview,
+body[data-theme="dark-theme"] .current-logo-preview {
+	background-color: rgba(255, 255, 255, 0.02);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark-theme"] .info-box,
+body[data-theme="dark-theme"] .info-box {
+	background-color: rgba(31, 134, 201, 0.08);
+	border-color: rgba(31, 134, 201, 0.3);
+}
+
+[data-theme="dark-theme"] .theme-notice-box,
+body[data-theme="dark-theme"] .theme-notice-box {
+	background-color: rgba(76, 175, 80, 0.1);
+	border-color: rgba(76, 175, 80, 0.3);
+}
+
+[data-theme="dark-theme"] .text-muted,
+body[data-theme="dark-theme"] .text-muted {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* High Contrast Light */
+[data-theme="hc-light"] .logo-preview-box,
+body[data-theme="hc-light"] .logo-preview-box {
+	border-color: #000000;
+	border-width: 2px;
+	background-color: #ffffff;
+}
+
+[data-theme="hc-light"] .text-muted,
+body[data-theme="hc-light"] .text-muted {
+	color: #000000;
+}
+
+/* High Contrast Dark */
+[data-theme="hc-dark"] .logo-preview-box,
+body[data-theme="hc-dark"] .logo-preview-box {
+	border-color: #ffffff;
+	border-width: 2px;
+	background-color: #000000;
+}
+
+[data-theme="hc-dark"] .logo-preview-placeholder,
+body[data-theme="hc-dark"] .logo-preview-placeholder {
+	color: #ffffff;
+}
+
+[data-theme="hc-dark"] .text-muted,
+body[data-theme="hc-dark"] .text-muted {
+	color: #ffffff;
+}
+
+
+/* Upload Button */
+#logo-upload-button,
+#logo-reset-button {
+	font-size: 13px;
+	min-height: 28px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.logo-preview-box {
+		padding: 20px;
+		min-height: 140px;
+	}
+
+	.logo-preview-image {
+		max-height: 150px;
+	}
+
+	.info-box,
+	.theme-notice-box {
+		padding: 10px 14px;
+	}
+}

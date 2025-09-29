@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2.0,
+	"id": "uimodify",
+	"name": "UI Rebranding",
+	"author": "Monzphere - Partners : Capmon,Lunio,IOS,Unirede.",
+	"url": "https://github.com/yourusername/uimodify",
+	"version": "1.0.0",
+	"namespace": "UIModify",
+	"description": "Frontend module for customizing Zabbix UI: change logos, apply custom branding, and manage appearance settings with theme support.",
+	"actions": {
+		"uimodify.logo.edit": {
+			"class": "CControllerUIModifyLogoEdit",
+			"view": "uimodify.logo.edit",
+			"layout": "layout.htmlpage"
+		},
+		"uimodify.logo.upload": {
+			"class": "CControllerUIModifyLogoUpload",
+			"layout": "layout.json"
+		},
+		"uimodify.logo.preview": {
+			"class": "CControllerUIModifyLogoPreview",
+			"layout": "layout.json"
+		},
+		"uimodify.config.save": {
+			"class": "CControllerUIModifyConfigSave",
+			"layout": "layout.json"
+		},
+		"uimodify.logo.remove": {
+			"class": "CControllerUIModifyLogoRemove",
+			"layout": "layout.json"
+		}
+	},
+	"assets": {
+		"js": [
+			"uimodify.js"
+		],
+		"css": [
+			"uimodify.css"
+		]
+	}
+}
