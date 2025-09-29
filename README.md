@@ -3,6 +3,7 @@
 **Version:** 1.0.0
 **Compatibility:** Zabbix 6.0+
 **License:** GNU AGPLv3
+<img width="1528" height="933" alt="image" src="https://github.com/user-attachments/assets/2a2a4dba-7fab-45a1-bbde-cd1c66af9a90" />
 
 ## Description
 
